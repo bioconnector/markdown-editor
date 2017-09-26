@@ -64,7 +64,7 @@
       padding: 10px;
       padding-left: 20px;
       color: #444;
-      font-family:Georgia, Palatino, 'Palatino Linotype', Times, 'Times New Roman', serif;
+      font-family:Helvetica, Arial, sans-serif, Georgia, Palatino, 'Palatino Linotype', Times, 'Times New Roman', serif;
       font-size: 16px;
       line-height: 1.5em
     }
@@ -203,44 +203,48 @@
   </style>
 </head>
 <body>
-  <div id="in"><form><textarea id="code"># (GitHub-Flavored) Markdown Editor
+  <div id="in"><form><textarea id="code">
+# Markdown Editor
 
 Basic useful feature list:
 
- * Ctrl+S / Cmd+S to save the file
- * Ctrl+Shift+S / Cmd+Shift+S to choose to save as Markdown or HTML
- * Drag and drop a file into here to load it
- * File contents are saved in the URL so you can share files
+- Ctrl+S / Cmd+S to save the file
+- Ctrl+Shift+S / Cmd+Shift+S to choose to save as Markdown or HTML
+- Drag and drop a file into here to load it
+- File contents are saved in the URL so you can share files
 
+## Examples
 
-I'm no good at writing sample / filler text, so go write something yourself.
+### Lists
 
-Look, a list!
+Here's an example of a list:
 
- * foo
- * bar
- * baz
+- Unordered list item 1
+- Unordered list item 2 with **bold** text
+- Unordered list item 3 with *italicized* text
 
-And here's some code! :+1:
+1. Ordered list item 1
+1. Ordered list item 2 (note that numbering doesn't matter)
+1. Ordered list item 3 (note that numbering doesn't matter)
 
-```javascript
-$(function(){
-  $('div').html('I am a div.');
-});
+### Code
+
+Here's some example code. You can used `fixed width formatting inline` with backticks.
+
+```
+library(readr)
+library(dplyr)
+read_csv("some_data.csv") %>%
+    group_by(somevariable) %>%
+    summarize(mean=mean(x))
 ```
 
-This is [on GitHub](https://github.com/jbt/markdown-editor) so let me know if I've b0rked it somewhere.
+## More info
 
+See also the [markdown reference guide](http://bioconnector.org/markdown). 
 
-Props to Mr. Doob and his [code editor](http://mrdoob.com/projects/code-editor/), from which
-the inspiration to this, and some handy implementation hints, came.
+The source for this application is [on GitHub](https://github.com/bioconnector/markdown-editor). Originally forked from [jbt/markdown-editor](https://github.com/jbt/markdown-editor). 
 
-### Stuff used to make this:
-
- * [markdown-it](https://github.com/markdown-it/markdown-it) for Markdown parsing
- * [CodeMirror](http://codemirror.net/) for the awesome syntax-highlighted editor
- * [highlight.js](http://softwaremaniacs.org/soft/highlight/en/) for syntax highlighting in output code blocks
- * [js-deflate](https://github.com/dankogai/js-deflate) for gzipping of data to make it fit in URLs
 </textarea></form></div>
   <div id="out"></div>
   <div id="menu">

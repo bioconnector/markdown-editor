@@ -1,5 +1,5 @@
 # Live (GitHub-Flavored) Markdown Editor
 
-[Use it here](//jbt.github.io/markdown-editor)
+[Use it here](http://bioconnector.org/markdown-editor)
 
-Feel free to take the code and copy it and modify it and use it however you like. (If you really want a licence, see [WTFPL](http://www.wtfpl.net/txt/copying/))
+Originally forked from [jbt/markdown-editor](https://github.com/jbt/markdown-editor). 
